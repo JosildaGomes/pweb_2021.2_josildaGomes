@@ -1,5 +1,3 @@
-Sistema da Informação
-Projeto de desenvolvimento Web
-Docente: Francisco Xico
-Discente: Maria Josilda Gomes 
-Seja bem vindo ao meu cantinho de desenvolver web
+<h1> Projeto de Desenvolvimento Web</h1 <>
+> ❤️Meu cantinho de Desenvolver❤️😍
+#SEJA BEM VINDO! 🔓🔑😍😍
