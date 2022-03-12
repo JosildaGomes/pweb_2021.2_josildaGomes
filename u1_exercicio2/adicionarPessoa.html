@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
-    <title>PWeb - by Xico Arruda</title>
+    <meta charset="UFT-8">
+	<meta name= "viewport" content= "width=device-width,initial-scale=1.0"/>
+	<title> Pweb - Josilda Gomes </title>
+	<link rel="stylesheet" href="style/style.css ">
 </head>
 
 <body>
 
+<nav id="menu"> 
+	<ul >
+		<li><a href="index.html"> Início</a></li>
+		<li><a class="active" href="adicionarPessoa.html">Adicionar Pessoa </a></li>
+		<li><a href="listarPessoas.html">Listar Pessoas </a></li>
+		<li><a href="noticias.html">Canais de Notícias </a></li>
+		<li><a href="contato.html">Mande um E-mail </a></li>
+		<li class ="right"> <a href="sobre.html">Sobre o Site </a></li>
+	</ul>
+</nav>
+
+<h1> Formulário de adicionar pessoas!</h1>
+<form action="adicionadaComSucesso.html" method="post">
+
+<label for="nomeCompleto"> Nome Completo:*</label>
+<input type="text" placeholder="Digite seu nome Completo" required>
+<br/>
+<label for="DataNascimento"> Data de Nascimento:*</label>
+<input type="date" required>
+<br/>
+<label for="E-mail"> E-mail:*</label>
+<input type="email" placeholder="nome@dominio.com"required>
+<br/>
+<label for="sexo">Sexo:*</label><br><br/>
+
+<input type="radio" id="masculino" name="sexo" value="Masculino" required>
+<label for="masculino">Masculino</label><br/>
+
+<input type="radio" id="feminino" name="sexo" value="feminino">
+<label for="feminino">feminino</label><br/>
+
+<input type="radio" id="naoInformar" name="sexo" value="Não Informar">
+<label for="NaoInformar">Não Informar</label>
+<br/>
+
+<input type="reset" id="reset" value="Limpar">
+<input type="submit" id="submit" value="Cadastrar!"> 
+
+</form>
+
+<p> * Obrigatório</p>
 </body>
 
 </html>

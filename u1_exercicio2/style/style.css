@@ -1,4 +1,64 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'open sans',sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+#menu{
+	
+list-style:none;
+padding:0;
+background-color:#10100f;
+
+}
+
+#menu ul li{
+	display: inline;
+	
+}
+#menu ul li a{
+	color:#fff;
+	padding:20px;
+	display: inline-block;
+	text-decoration:none;
+	transition: background .1s;
+}
+#menu ul li a:hover{
+	background-color:rgb(165, 42, 42);
+	
+}
+
+#menu ul li:last-child a{
+	float: right;
+	
+}
+.active{
+	background-color: rgb(165, 42, 42);
+}
+
+#Botôes ul li a{
+	
+	padding:20px;
+	display:inline;
+	color:rgb(165, 42, 42);
+	transition: 1s;
+
+}
+
+input {
+	margin-bottom: 10px;
+  }
+
+#reset,#submit{
+
+	background-color:rgb(165, 42, 42);
+	color:white;
+	padding: 10px 18px;
+  	margin-top: 8px;
+  	margin-right: 5px;
+
+}
+
