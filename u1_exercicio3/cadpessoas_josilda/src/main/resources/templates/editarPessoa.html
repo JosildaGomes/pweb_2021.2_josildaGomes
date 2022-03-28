@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" th:href="@{/public/favicon.ico}">
+    <title> Pweb - Josilda Gomes </title>
+    <link rel="stylesheet" th:href="@{/style/style.css}">
+</head>
+
+<body>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="/"> Início</a></li>
+            <li><a class="active" href="/adicionarPessoa">Adicionar Pessoa </a></li>
+            <li><a href="/listarPessoas">Listar Pessoas </a></li>
+            <li><a href="/public/noticias.html">Canais de Notícias </a></li>
+            <li><a href="/public/contato.html">Mande um E-mail </a></li>
+            <li class="right"> <a href="/public/sobre.html">Sobre o Site </a></li>
+        </ul>
+    </nav>
+
+    <div class="formulario">
+        <h1> Formulário de Editar pessoas!</h1>
+
+        <form  action="#" method="POST" th:objetive="${pessoa}" th: action="@{/editar/{id}(id=${pessoa.id})}">
+        
+        <label for="nomeCompleto"> Nome Completo:*</label>
+        <input type="text" placeholder="Digite seu nome Completo" required>
+        <br/>
+        <label for="DataNascimento"> Data de Nascimento:*</label>
+        <input type="date" required>
+        <br/>
+        <label for="E-mail"> E-mail:*</label>
+        <input type="email" placeholder="nome@dominio.com"required>
+        <br/>
+        <label for="sexo">Sexo:*</label><br><br/>
+        
+        <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+        <label for="masculino">Masculino</label><br/>
+        
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">feminino</label><br/>
+        
+        <input type="radio" id="naoInformar" name="sexo" value="Não Informar">
+        <label for="NaoInformar">Não Informar</label>
+        <br/>
+        
+        <input type="reset" id="reset" value="Reiniciar">
+        <input type="submit" id="submit" value="Editar!"> 
+        
+        </form>
+
+
+    </html>
+

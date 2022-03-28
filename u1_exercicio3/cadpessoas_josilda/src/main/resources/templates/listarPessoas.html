@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" th:href="@{/public/favicon.ico}">
+    <title> Pweb - Josilda Gomes </title>
+    <link rel="stylesheet" th:href="@{/style/style.css}">
+</head>
+
+<body>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="/"> Início</a></li>
+            <li><a class="active" href="/adicionarPessoa">Adicionar Pessoa </a></li>
+            <li><a href="/listarPessoas">Listar Pessoas </a></li>
+            <li><a href="/public/noticias.html">Canais de Notícias </a></li>
+            <li><a href="/public/contato.html">Mande um E-mail </a></li>
+            <li class="right"> <a href="/public/sobre.html">Sobre o Site </a></li>
+        </ul>
+    </nav>
+
+    <div class="tabela">
+        <h1> Lista de pessoas cadastradas</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Nome Completo</th>
+                    <th>Data de Nascimento</th>
+                    <th>E-Mail</th>
+                    <th>sexo</th>
+                    <th>Editar</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="umaPessoa: ${todasAsPessoas}">
+                    <td th:text="${umaPessoa.id}"></td>
+                    <td th:text="${umaPessoa.nome}"></td>
+                    <td>
+                        <a th:href="'mailto:'+${umaPessoa.email}" th:text="${umaPessoa.email}"></a>
+                    </td>
+                    <td th:text="${#temporals.format(umaPessoa.dataNascimento,'dd/MM/yyyy')}"></td>
+                    <td th:text="${umaPessoa.sexo}"></td>
+                    <td>
+                        <a th:href="@{/editar/{id}(id=${umaPessoa.id})}">Editar</a>
+                    </td>
+                    <td>
+                        <a th:href="@{/remover/{id}(id=${umaPessoa.id})}">Remover</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
