@@ -14,7 +14,7 @@
 	<name>cadpessoas_josilda</name>
 	<description>Cadastro de Pessoas- PWeb 2021.2</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>1.8</java.version>
 		<repackage.classifier/>
 		<spring-native.version>0.11.3</spring-native.version>
 	</properties>

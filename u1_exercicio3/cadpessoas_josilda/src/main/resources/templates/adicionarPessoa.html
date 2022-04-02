@@ -28,23 +28,26 @@
         <form  method="POST" th:objetive="${pessoa}" th: action="@{/adicionarPessoa}">
         
         <label for="nomeCompleto"> Nome Completo:*</label>
-        <input type="text" placeholder="Digite seu nome Completo" required>
+        <input type="text" placeholder="Digite seu nome Completo" th:field="*{nome} required>
+        
+
         <br/>
+
         <label for="DataNascimento"> Data de Nascimento:*</label>
-        <input type="date" required>
+        <input type="date" th:field="*{dataNascimento}required>
         <br/>
         <label for="E-mail"> E-mail:*</label>
-        <input type="email" placeholder="nome@dominio.com"required>
+        <input type="email" placeholder="nome@dominio.com" th:field="*{email}required>
         <br/>
         <label for="sexo">Sexo:*</label><br><br/>
         
-        <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+        <input type="radio" id="masculino" name="sexo" value="Masculino" th:field="*{genero}required>
         <label for="masculino">Masculino</label><br/>
         
-        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <input type="radio" id="feminino" name="sexo" value="feminino" th:field="*{genero}required>
         <label for="feminino">feminino</label><br/>
         
-        <input type="radio" id="naoInformar" name="sexo" value="Não Informar">
+        <input type="radio" id="naoInformar" name="sexo" value="Não Informar" th:field="*{genero}required>
         <label for="NaoInformar">Não Informar</label>
         <br/>
         
