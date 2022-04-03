@@ -16,16 +16,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor 
-@NoArgsConstructor 
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
-@Entity 
-@Table(name="pessoas")
-
+@Entity
+@Table(name = "pessoas")
 
 public class Pessoa implements Serializable {
-
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,9 +30,9 @@ public class Pessoa implements Serializable {
     private String nome;
     private String email;
     private String genero;
-    
+
     @Column(nullable = false)
-    @DateTimeFormat(pattern="yyyy-mm-dd")
+    @DateTimeFormat(pattern = "yyyy-mm-dd")
     private LocalDate dataNascimento;
 
 }
