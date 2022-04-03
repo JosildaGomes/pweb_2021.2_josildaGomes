@@ -27,17 +27,18 @@ public class PessoaController {
     @GetMapping
 
     public String inicio() {
+
         return "index.html";
     }
 
     @GetMapping("/listarPessoas")
 
     public ModelAndView listarPessoas() {
-        List<Pessoa> todasAsPessoas = pessoaRepo.findAll();
+        List<Pessoa> lista = pessoaRepo.findAll();
 
-        ModelAndView modelAndView = new ModelAndView("listarPessoas");
+        ModelAndView modelAndView= new ModelAndView("listarPessoas");
 
-        modelAndView.addObject("todasAsPessoas", todasAsPessoas);
+        modelAndView.addObject("pessoas" , lista);
 
         return modelAndView;
     }
