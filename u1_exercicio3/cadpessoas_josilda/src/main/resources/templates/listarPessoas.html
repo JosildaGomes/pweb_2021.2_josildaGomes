@@ -2,12 +2,11 @@
 <html lang="pt_br">
 
 <head>
-    <meta charset="UFT-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UFT-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta codigoSemana3=""forYourEyesOnly">
-    <link rel="icon" type="image/x-icon" th:href="@{/public/favicon.ico}">
-    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" th:href="@{/public/favicon.ico}"/>
+    <link th:href="@{/style/style.css}" rel="stylesheet"/>
     <title> Listar Pessoas -com Spring </title>
 </head>
 
@@ -35,20 +34,20 @@
                     <th>Nome Completo</th>
                     <th>Data de Nascimento</th>
                     <th>E-Mail</th>
-                    <th>Sexo</th>
+                    <th>Genero</th>
                     <th>Editar</th>
                     <th>Remover</th>
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="umaPessoa: ${pessoas}">
+                <tr th:each="Pessoa:${pessoas}">
                     <td th:text="${Pessoa.id}"></td>
                     <td th:text="${Pessoa.nome}"></td>
                     <td>
                         <a th:href="'mailto:'+${Pessoa.email}" th:text="${Pessoa.email}"></a>
                     </td>
                     <td th:text="${#temporals.format(Pessoa.dataNascimento,'dd/MM/yyyy')}"></td>
-                    <td th:text="${Pessoa.sexo}"></td>
+                    <td th:text="${Pessoa.genero}"></td>
                     <td>
                         <a th:href="@{/editar/{id}(id=${Pessoa.id})}">Editar</a>
                     </td>
