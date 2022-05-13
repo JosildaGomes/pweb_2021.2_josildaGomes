@@ -5,6 +5,8 @@
     <meta charset="UFT-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" th:href="@{/public/favicon.ico}"/>
+    <link th:href="@{/style/style.css}" rel="stylesheet"/>
     <title> inicio -com Spring </title>
 </head>
 
@@ -13,17 +15,19 @@
     <nav id="menu">
         <ul>
             <li><a class="active" href="/"> Início</a></li>
-            <li><a href="/adicionarCliente">Adicionar Clientes </a></li>
-            <li><a href="/listarCliente">Listar Clientes </a></li>
-            <li class="right"> <a href="/public/sobre.html">Sobre a Loja </a></li>
+            <li><a  href="/adicionarPessoa">Adicionar Pessoa </a></li>
+            <li><a href="/listarPessoas">Listar Pessoas </a></li>
+            <li><a href="/public/noticias.html">Canais de Notícias </a></li>
+            <li><a href="/public/contato.html">Mande um E-mail </a></li>
+            <li class="right"> <a href="/public/sobre.html">Sobre o Site </a></li>
         </ul>
     </nav>
 
     <div align="center">
-        <h1> Não deixe para comer amanhã, o DOCE que você pode comer hoje!</h1>
+        <h1> Hidrate-se!</h1>
 
         <figure class="capa">
-            <img th:src="@{/Imagens\guloseimas.jpg}" width="1100" height="650" title="ÁGUA é VIDA!" />
+            <img th:src="@{/Imagens\Hidrate-se.jpg}" width="1100" height="650" title="ÁGUA é VIDA!" />
 
         </figure>
     </div>
