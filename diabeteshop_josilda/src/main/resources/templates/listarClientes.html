@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UFT-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title> Listar Clientes -com Spring </title>
+</head>
+
+<body>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="/"> Início</a></li>
+            <li><a  href="/adicionarCliente">Adicionar Cliente </a></li>
+            <li><a class= "active" href="/listarCliente">Listar Cliente</a></li>
+            <li class="right"> <a href="/public/sobre.html">Sobre a Loja </a></li>
+        </ul>
+    </nav>
+
+    <div class="tabela">
+       <center> <h1> Lista de Clientes cadastrados</h1></center>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>codigo</th>
+                    <th>Nome Completo</th>
+                    <th>Endereço</th>
+                    <th>CEP</th>
+                    <th>Genero</th>
+                    <th>Email</th>
+                    <th>Contato(Whatsapp)</th>
+                    <th>Editar</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="Cliente:${clientes}">
+                    <td th:text="${cliente.codigo}"></td>
+                    <td th:text="${Cliente.nome}"></td>
+                    <td th:text="${Cliente.endereço}"></td>
+                    <td th:text="${Cliente.cep}"></td>
+                    <td>
+                        <a th:href="'mailto:'+${Cliente.email}" th:text="${Cliente.email}"></a>
+                    </td>
+                    <td th:text="${Cliente.genero}"></td>
+                    <td th:text="${Cliente.contato}"></td>
+                    <td>
+                        <a th:href="@{/editar/{codigo}(id=${Cliente.codigo})}">Editar</a>
+                    </td>
+                    <td>
+                        <a th:href="@{/remover/{codigo}(id=${Cliente.codigo})}">Remover</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

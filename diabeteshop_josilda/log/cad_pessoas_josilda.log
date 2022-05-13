@@ -1,0 +1,41 @@
+2022-05-12 20:35:15.459  INFO 34396 --- [restartedMain] b.c.j.d.DiabeteshopJosildaApplication    : Starting DiabeteshopJosildaApplication using Java 1.8.0_332 on LAPTOP-HFS532QS with PID 34396 (C:\Users\josil\OneDrive\Documentos\GitHub\pweb_2021.2_josildaGomes\diabeteshop_josilda\target\classes started by josil in C:\Users\josil\OneDrive\Documentos\GitHub\pweb_2021.2_josildaGomes\diabeteshop_josilda)
+2022-05-12 20:35:15.471  INFO 34396 --- [restartedMain] b.c.j.d.DiabeteshopJosildaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-12 20:35:15.580  INFO 34396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-12 20:35:15.584  INFO 34396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-12 20:35:16.854  INFO 34396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-12 20:35:17.073  INFO 34396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 1 JPA repository interfaces.
+2022-05-12 20:35:19.170  INFO 34396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-12 20:35:19.202  INFO 34396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-12 20:35:19.217  INFO 34396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-12 20:35:20.371  INFO 34396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-12 20:35:20.374  INFO 34396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4789 ms
+2022-05-12 20:35:20.502  INFO 34396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-12 20:35:21.155  INFO 34396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-12 20:35:21.181  INFO 34396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cadpessoas'
+2022-05-12 20:35:24.459  INFO 34396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-12 20:35:26.008  WARN 34396 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-12 20:35:27.223  INFO 34396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-12 20:35:27.320  INFO 34396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-12 20:35:27.355  INFO 34396 --- [restartedMain] b.c.j.d.DiabeteshopJosildaApplication    : Started DiabeteshopJosildaApplication in 12.639 seconds (JVM running for 14.546)
+2022-05-12 20:36:22.280  INFO 34396 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-12 20:36:22.286  INFO 34396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-12 20:36:22.292  INFO 34396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-12 23:24:58.576  INFO 51716 --- [restartedMain] b.c.j.d.DiabeteshopJosildaApplication    : Starting DiabeteshopJosildaApplication using Java 1.8.0_332 on LAPTOP-HFS532QS with PID 51716 (C:\Users\josil\OneDrive\Documentos\GitHub\pweb_2021.2_josildaGomes\diabeteshop_josilda\target\classes started by josil in C:\Users\josil\OneDrive\Documentos\GitHub\pweb_2021.2_josildaGomes\diabeteshop_josilda)
+2022-05-12 23:24:58.580  INFO 51716 --- [restartedMain] b.c.j.d.DiabeteshopJosildaApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-12 23:24:58.694  INFO 51716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-12 23:24:58.695  INFO 51716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-12 23:24:59.837  INFO 51716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-12 23:25:00.014  INFO 51716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interfaces.
+2022-05-12 23:25:01.514  INFO 51716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-12 23:25:01.540  INFO 51716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-12 23:25:01.542  INFO 51716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-12 23:25:01.645  INFO 51716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-12 23:25:01.646  INFO 51716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2950 ms
+2022-05-12 23:25:01.734  INFO 51716 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-12 23:25:02.246  INFO 51716 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-12 23:25:02.264  INFO 51716 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cadpessoas'
+2022-05-12 23:25:04.622  INFO 51716 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-12 23:25:05.117  INFO 51716 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-12 23:25:05.952  INFO 51716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-12 23:25:06.079  INFO 51716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-12 23:25:06.119  INFO 51716 --- [restartedMain] b.c.j.d.DiabeteshopJosildaApplication    : Started DiabeteshopJosildaApplication in 8.339 seconds (JVM running for 10.067)

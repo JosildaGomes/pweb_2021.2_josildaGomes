@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Clientes-com spring</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="/"> Início</a></li>
+            <li><a class="active" href="/adicionarPessoa">Adicionar Clientes </a></li>
+            <li><a href="/listarPessoas">Listar Clientes </a></li>
+            <li class="right"> <a href="/public/sobre.html">Sobre a Loja </a></li>
+        </ul>
+    </nav>
+
+    <div style="margim-left:25%;padding:1px  16px;height:1000px">
+
+        <h1>Adicionar Cliente</h1>
+        <form
+                method="POST"
+                th:object="${pessoa}"
+                th:action="@{/adicionarCliente}"
+        <p>
+             Nome Completo*:
+            <input type="text" placeholder="Digite seu nome Completo" th:field="*{nome}" required>
+        </p>
+        <p>
+            Endereço*:
+            <input type="text" placeholder="Digite seu endereço" th:field="*{endereço}" required>
+        </p>
+        <p>
+            CEP*:
+            <input type="text" placeholder="Digite seu CEP" th:field="*{endereço}" required>
+        </p>
+    
+         <p> Genero*: </p>
+
+             <p>
+             <input type="radio" name="genero" value="Masculino" th:field="*{genero}"required/>Masculino
+            </p>
+
+        <p>
+                <input type="radio"  name="genero" value="feminino" th:field="*{genero}"required/>Feminino
+        </p>
+
+           <p>
+            <input type="radio" name="genero" value="Não Informar" th:field="*{genero}"required/>Não Informar
+            </p>
+
+        
+        <input type="reset" id="reset" value="Limpar">
+        <input type="submit" id="submit" value="Adicionar!">
+
+        </form>
+
+        <P> *Campo Obrigatório </P>
+    </div>
+    
+</body>
+</html>
