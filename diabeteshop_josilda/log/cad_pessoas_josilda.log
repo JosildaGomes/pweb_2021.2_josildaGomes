@@ -39,3 +39,16 @@
 2022-05-12 23:25:05.952  INFO 51716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2022-05-12 23:25:06.079  INFO 51716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2022-05-12 23:25:06.119  INFO 51716 --- [restartedMain] b.c.j.d.DiabeteshopJosildaApplication    : Started DiabeteshopJosildaApplication in 8.339 seconds (JVM running for 10.067)
+2022-05-12 23:53:19.536  INFO 53648 --- [main] c.j.d.DiabeteshopJosildaApplicationTests : Starting DiabeteshopJosildaApplicationTests using Java 1.8.0_332 on LAPTOP-HFS532QS with PID 53648 (started by josil in C:\Users\josil\OneDrive\Documentos\GitHub\pweb_2021.2_josildaGomes\diabeteshop_josilda)
+2022-05-12 23:53:19.539  INFO 53648 --- [main] c.j.d.DiabeteshopJosildaApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2022-05-12 23:53:21.490  INFO 53648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-12 23:53:21.624  INFO 53648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2022-05-12 23:53:24.242  INFO 53648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-12 23:53:24.775  INFO 53648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-12 23:53:26.705  INFO 53648 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-12 23:53:27.513  INFO 53648 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cadpessoas'
+2022-05-12 23:53:27.622  INFO 53648 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-12 23:53:28.625  INFO 53648 --- [main] c.j.d.DiabeteshopJosildaApplicationTests : Started DiabeteshopJosildaApplicationTests in 9.808 seconds (JVM running for 12.803)
+2022-05-12 23:53:28.793  INFO 53648 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-12 23:53:28.809  INFO 53648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-12 23:53:28.817  INFO 53648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
