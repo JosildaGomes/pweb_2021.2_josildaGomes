@@ -90,3 +90,8 @@ body {
   a{
   color:rgb(165, 42, 42);	
   }
+  .addcliente{
+    margin-left:25%;
+    padding:1px 16px;
+    height:1000px;
+  }

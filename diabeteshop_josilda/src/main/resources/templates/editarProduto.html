@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UFT-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link th:href="@{/style/style.css}" rel="stylesheet"/>
+    <title> Editar Produtos -com Spring </title>
+</head>
+
+<body>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="/"> Início</a></li>
+            <li><a class="active" href="/adicionarProduto">Adicionar Produto </a></li>
+            <li><a href="/listarProdutos">Listar Produtos </a></li>
+            <li class="right"> <a href="/public/sobre.html">Sobre a Loja </a></li>
+        </ul>
+    </nav>
+
+    <div style="margim-left:25%;padding:1px  16px;height:1000px">
+
+        <h1> Editar Produtos</h1>
+        <form>
+                method="POST"
+                th:object="${produto}"
+                th:action="@{/adicionarProduto}"
+            <p> 
+                Nome do produto*:
+            <input type="text" placeholder="Digite o nome do produto" th:field="*{nome}" required>
+            </p>
+            <p>
+                marca*:
+                <input type="text"placeholder="Digite a marca do produto" th:field="*{marca}"required>
+            </p>
+            <p>
+                Altura*:
+                <input type="text"placeholder="Digite a altura do produto" th:field="*{altura}"required>
+                </p>
+            <p>
+                Largura*:
+                <input type="text"placeholder="Digite a largura do produto" th:field="*{largura}"required>
+            </p>
+            <p>
+                profundidade*:
+                <input type="text"placeholder="digite a profundidade do produto" th:field="*{profundidade}"required>
+            </p>
+            <p>
+                peso*:
+                <input type="text"placeholder="Digite o peso do produto" th:field="*{peso}"required>
+            </p>
+            <p>
+                Preço de compra*:
+                <input type="text"placeholder="Digite o preco de compra do produto" th:field="*{precocompra}"required>
+            </p>
+            <p>
+                Preço de venda*:
+                <input type="text"placeholder="Digite o preco de venda do produto" th:field="*{precovenda}"required>
+            </p>
+
+    
+        
+        <input type="reset" id="reset" value="Limpar">
+        <input type="submit" id="submit" value="Adicionar!">
+
+        </form>
+
+        <P> *Campo Obrigatório </P>
+    </div>
+</body>
+    </html>

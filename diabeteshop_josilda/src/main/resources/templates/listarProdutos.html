@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt_br">
 
 <head>
@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link th:href="@{/style/style.css}" rel="stylesheet"/>
-    <title> Listar Clientes -com Spring </title>
+    <title> Listar Produtos -com Spring </title>
 </head>s
 
 <body>
@@ -14,25 +14,25 @@
     <nav id="menu">
         <ul>
             <li><a href="/"> Início</a></li>
-            <li><a  href="/adicionarCliente">Adicionar Cliente </a></li>
-            <li><a class= "active" href="/listarClientes">Listar Cliente</a></li>
+            <li><a  href="/adicionarProduto">Adicionar Produto </a></li>
+            <li><a class= "active" href="/listarProdutos">Listar Produtos</a></li>
             <li class="right"> <a href="/public/sobre.html">Sobre a Loja </a></li>
         </ul>
     </nav>
 
     <div class="tabela">
-       <center> <h1> Lista de Clientes cadastrados</h1></center>
-       
+       <center> <h1> Lista de Produtos cadastrados</h1></center>
+
         <table>
             <thead>
                 <tr>
                     <th>codigo</th>
-                    <th>Nome Completo</th>
-                    <th>Cidade</th>
-                    <th>CEP</th>
-                    <th>Genero</th>
-                    <th>Email</th>
-                    <th>Contato(Whatsapp)</th>
+                    <th>Nome do produto </th>
+                    <th>Marca</th>
+                    <th>Altura</th>
+                    <th>Largura</th>
+                    <th>Profundidade</th>
+                    <th>Volume</th>
                     <th>Editar</th>
                     <th>Remover</th>
                 </tr>
@@ -41,18 +41,18 @@
                 <tr th:each="cliente:${clientes}">
                     <td th:text="${cliente.codigo}"></td>
                     <td th:text="${cliente.nome}"></td>
-                    <td th:text="${cliente.cidade}"></td>
+                    <td th:text="${cliente.endereco}"></td>
                     <td th:text="${cliente.cep}"></td>
-                    <td th:text="${cliente.genero}"></td>
                     <td>
                         <a th:href="'mailto:'+${cliente.email}" th:text="${cliente.email}"></a>
                     </td>
+                    <td th:text="${cliente.genero}"></td>
                     <td th:text="${cliente.contato}"></td>
                     <td>
-                        <a th:href="@{/editar/{codigo}(codigo=${cliente.codigo})}">Editar</a>
+                        <a th:href="@{/editar/{codigo}(id=${cliente.codigo})}">Editar</a>
                     </td>
                     <td>
-                        <a th:href="@{/remover/{codigo}(codigo=${cliente.codigo})}">Remover</a>
+                        <a th:href="@{/remover/{codigo}(id=${cliente.codigo})}">Remover</a>
                     </td>
                 </tr>
             </tbody>
