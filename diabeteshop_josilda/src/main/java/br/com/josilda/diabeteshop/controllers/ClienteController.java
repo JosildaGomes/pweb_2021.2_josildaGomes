@@ -7,22 +7,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.com.josilda.diabeteshop.model.Cliente;
 import br.com.josilda.diabeteshop.repositories.ClienteRepository;
 
 @Controller
-@RequestMapping("/")
 public class ClienteController {
     @Autowired
     ClienteRepository clienteRepo;
     
-    @GetMapping
+    @GetMapping("/")
     public String inicio() {
 
-        return "index.html";
+        return "index";
     }
     @GetMapping("/listarClientes")
 

@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt_br">
 
 <head>
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link th:href="@{/style/style.css}" rel="stylesheet"/>
     <title> Listar Produtos -com Spring </title>
-</head>s
+</head>
 
 <body>
 
@@ -33,26 +33,32 @@
                     <th>Largura</th>
                     <th>Profundidade</th>
                     <th>Volume</th>
+                    <th>Peso</th>
+                    <th>Preço de compra</th>
+                    <th>Preço de Venda</th>
+                    <th>Data de Cadastro</th>
                     <th>Editar</th>
                     <th>Remover</th>
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="cliente:${clientes}">
-                    <td th:text="${cliente.codigo}"></td>
-                    <td th:text="${cliente.nome}"></td>
-                    <td th:text="${cliente.endereco}"></td>
-                    <td th:text="${cliente.cep}"></td>
+                <tr th:each="produto:${produtos}">
+                    <td th:text="${produto.codigo}"></td>
+                    <td th:text="${produto.nome}"></td>
+                    <td th:text="${produto.marca}"></td>
+                    <td th:text="${produto.altura}"></td>
+                    <td th:text="${produto.largura}"></td>
+                    <td th:text="${produto.profundidade}"></td>
+                    <td th:text="${produto.volume}"></td>
+                    <td th:text="${produto.peso}"></td>
+                    <td th:text="${produto.precocompra}"></td>
+                    <td th:text="${produto.precovenda}"></td>
+                    <td th:text="${produto.datacadastro}"></td>
                     <td>
-                        <a th:href="'mailto:'+${cliente.email}" th:text="${cliente.email}"></a>
+                        <a th:href="@{/edita/{codigo}(codigo=${produto.codigo})}">Editar</a>
                     </td>
-                    <td th:text="${cliente.genero}"></td>
-                    <td th:text="${cliente.contato}"></td>
                     <td>
-                        <a th:href="@{/editar/{codigo}(id=${cliente.codigo})}">Editar</a>
-                    </td>
-                    <td>
-                        <a th:href="@{/remover/{codigo}(id=${cliente.codigo})}">Remover</a>
+                        <a th:href="@{/remove/{codigo}(codigo=${produto.codigo})}">Remover</a>
                     </td>
                 </tr>
             </tbody>

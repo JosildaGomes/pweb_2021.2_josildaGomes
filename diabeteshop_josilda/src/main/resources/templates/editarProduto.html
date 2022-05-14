@@ -20,13 +20,13 @@
         </ul>
     </nav>
 
-    <div style="margim-left:25%;padding:1px  16px;height:1000px">
+    <div style="margin-left:25%;padding:1px  16px;height:1000px">
 
         <h1> Editar Produtos</h1>
-        <form>
+        <form
                 method="POST"
                 th:object="${produto}"
-                th:action="@{/adicionarProduto}"
+                th:action="@{/edita/{codigo}(codigo=${produto.codigo})}">
             <p> 
                 Nome do produto*:
             <input type="text" placeholder="Digite o nome do produto" th:field="*{nome}" required>
