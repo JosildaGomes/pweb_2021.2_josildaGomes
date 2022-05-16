@@ -14,20 +14,21 @@
     <nav id="menu">
         <ul>
             <li><a href="/"> Início</a></li>
-            <li><a class="active" href="/adicionarProduto">Adicionar Produto </a></li>
+            <li><a href="/adicionarCliente">Adicionar Clientes </a></li>
+            <li><a href="/listarClientes">Listar Clientes </a></li>
+            <li><a class="active" href="/adicionarProdutos">Adicionar Produtos </a></li>
             <li><a href="/listarProdutos">Listar Produtos </a></li>
-            <li><a href="/public/contato.html">contato </a></li>
             <li class="right"> <a href="/public/sobre.html">Sobre a Loja </a></li>
         </ul>
     </nav>
 
     <div style="margin-left:25%;padding:1px  16px;height:1000px">
 
-        <h1>Adicionar Produto</h1>
+        <h1>Adicionar Produtos</h1>
         <form
         method="POST"
         th:object="${produto}"
-        th:action="@{/adicionarProduto}">
+        th:action="@{/adicionarProdutos}">
             <p> 
                 Nome do produto*:
             <input type="text" placeholder="Digite o nome do produto" th:field="*{nome}" required>

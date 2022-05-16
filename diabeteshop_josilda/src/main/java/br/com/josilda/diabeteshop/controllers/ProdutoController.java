@@ -1,5 +1,7 @@
 package br.com.josilda.diabeteshop.controllers;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,16 +29,18 @@ public class ProdutoController {
 
         return modelAndView;
     }
-    @GetMapping("/adicionarProduto")
-    public ModelAndView formAdicionarProduto() {
-        ModelAndView modelAndView = new ModelAndView("adicionarProduto");
+    @GetMapping("/adicionarProdutos")
+    public ModelAndView formAdicionarProdutos() {
+        ModelAndView modelAndView = new ModelAndView("adicionarProdutos");
         modelAndView.addObject(new Produto());
         return modelAndView;
     }
 
-    @PostMapping("/adicionarProduto")
-    public String adicionarProduto(Produto p) {
-        p.setDatacadastro("13/05/2022");
+    @PostMapping("/adicionarProdutos")
+    public String adicionarProdutos(Produto p) {
+        Date dataHoraAtual = new Date();
+        String data = new SimpleDateFormat("dd/MM/yyyy").format(dataHoraAtual);
+        p.setDatacadastro(data);
         p.setVolume(p.getAltura()*p.getLargura()*p.getProfundidade());
         this.produtoRepo.save(p);
         return "redirect:/listarProdutos";
@@ -52,6 +56,10 @@ public class ProdutoController {
     }
     @PostMapping("/edita/{codigo}")
     public ModelAndView editarProduto(@PathVariable("codigo") Long codigo, Produto produto){
+        Date dataHoraAtual = new Date();
+        String data = new SimpleDateFormat("dd/MM/yyyy").format(dataHoraAtual);
+        produto.setDatacadastro(data);
+        produto.setVolume(produto.getAltura()*produto.getLargura()*produto.getProfundidade());
         this.produtoRepo.save(produto);
         return new ModelAndView("redirect:/listarProdutos");
     }
