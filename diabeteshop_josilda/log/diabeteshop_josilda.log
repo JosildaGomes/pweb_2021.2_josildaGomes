@@ -379,3 +379,6 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2022-06-15 16:13:07.064  INFO 33460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2022-06-15 16:13:07.070  INFO 33460 --- [restartedMain] b.c.j.d.DiabeteshopJosildaApplication    : Started DiabeteshopJosildaApplication in 1.299 seconds (JVM running for 298.426)
 2022-06-15 16:13:07.072  INFO 33460 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-15 16:30:58.907  INFO 33460 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 16:30:58.909  INFO 33460 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-15 16:30:58.910  INFO 33460 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

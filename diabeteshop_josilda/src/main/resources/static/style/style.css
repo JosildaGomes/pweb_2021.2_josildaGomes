@@ -9,7 +9,7 @@ body {
       
   list-style:none;
   padding:0;
-  background-color:#10100f;
+  background-color:#0b330b;
   
   }
   
@@ -25,7 +25,7 @@ body {
       transition: background .1s;
   }
   #menu ul li a:hover{
-      background-color:rgb(165, 42, 42);
+      background-color:rgb(188, 218, 189);
       
   }
   
@@ -34,14 +34,14 @@ body {
       
   }
   .active{
-      background-color: rgb(165, 42, 42);
+      background-color: rgb(41, 165, 47);
   }
   
   #Botôes ul li a{
       
       padding:20px;
       display:inline;
-      color:rgb(165, 42, 42);
+      color:rgb(41, 126, 45);
       transition: 1s;
   
   }
@@ -52,7 +52,7 @@ body {
   
   #reset,#submit{
   
-      background-color:rgb(165, 42, 42);
+      background-color:rgb(41, 165, 47);
       color:white;
       padding: 10px 18px;
         margin-top: 8px;
@@ -77,7 +77,7 @@ body {
       margin-left:20px;
   }
   a{
-  color:rgb(165, 42, 42);	
+  color:rgb(41, 165, 47);
   }
   .addcliente{
     margin-left:25%;
