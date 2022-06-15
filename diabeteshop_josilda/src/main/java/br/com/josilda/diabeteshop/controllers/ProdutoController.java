@@ -41,7 +41,7 @@ public class ProdutoController {
         Date dataHoraAtual = new Date();
         String data = new SimpleDateFormat("dd/MM/yyyy").format(dataHoraAtual);
         p.setDatacadastro(data);
-        p.setVolume(p.getAltura()*p.getLargura()*p.getProfundidade());
+        p.setVolume(p.getAltura()*p.getLargura()*p.getProfundidade());// Cálculo do volume
         this.produtoRepo.save(p);
         return "redirect:/listarProdutos";
     }
